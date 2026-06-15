@@ -1,0 +1,787 @@
+2026-06-01 18:28:00 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/serviceAccountKey.json
+2026-06-01 18:31:27 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:32:24 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-01 18:32:24 | ERROR    | ai_teacher:generate_and_save_explanation:41 - Échec critique de l'IA pour [salon_test_maieutique]: 'Settings' object has no attribute 'GROQ_API_KEY'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 16, in generate_and_save_explanation
+    api_key=settings.GROQ_API_KEY,
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'GROQ_API_KEY'
+2026-06-01 18:35:40 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:36:54 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-01 18:36:54 | ERROR    | ai_teacher:generate_and_save_explanation:41 - Échec critique de l'IA pour [salon_test_maieutique]: 'Settings' object has no attribute 'GROQ_API_KEY'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 16, in generate_and_save_explanation
+    api_key=settings.GROQ_API_KEY,
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'GROQ_API_KEY'
+2026-06-01 18:39:39 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:40:04 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-01 18:40:04 | ERROR    | ai_teacher:generate_and_save_explanation:41 - Échec critique de l'IA pour [salon_test_maieutique]: 'Settings' object has no attribute 'GROQ_API_KEY'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 16, in generate_and_save_explanation
+    api_key=settings.GROQ_API_KEY,
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'GROQ_API_KEY'
+2026-06-01 18:41:18 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:41:46 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Puthagore ??'
+2026-06-01 18:41:46 | ERROR    | ai_teacher:generate_and_save_explanation:41 - Échec critique de l'IA pour [salon_test_maieutique]: 'Settings' object has no attribute 'GROQ_API_KEY'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 16, in generate_and_save_explanation
+    api_key=settings.GROQ_API_KEY,
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\pydantic\main.py", line 1042, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Settings' object has no attribute 'GROQ_API_KEY'
+2026-06-01 18:45:05 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:45:35 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-01 18:45:35 | ERROR    | ai_teacher:generate_and_save_explanation:41 - Échec critique de l'IA pour [salon_test_maieutique]: Unsupported message type: <class 'ellipsis'>
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 20, in generate_and_save_explanation
+    prompt_template = ChatPromptTemplate.from_messages([...])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\prompts\chat.py", line 1168, in from_messages
+    return cls(messages, template_format=template_format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\prompts\chat.py", line 972, in __init__
+    messages_ = [
+                ^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\prompts\chat.py", line 973, in <listcomp>
+    _convert_to_message_template(message, template_format)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\prompts\chat.py", line 1485, in _convert_to_message_template
+    raise NotImplementedError(msg)
+NotImplementedError: Unsupported message type: <class 'ellipsis'>
+2026-06-01 18:49:51 | INFO     | test_local:run_local_test:17 - Initialisation de Firebase avec la clé : config/krak-64aec-firebase-adminsdk-fbsvc-b37cb5dbce.json
+2026-06-01 18:50:16 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-01 18:50:18 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 2.13s pour le salon [salon_test_maieutique]
+2026-06-01 18:51:52 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'D'accord qu'en est il du théorème de Thalès ??'
+2026-06-01 18:51:54 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 1.97s pour le salon [salon_test_maieutique]
+2026-06-01 19:46:26 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Le cycle de l'eau'
+2026-06-01 19:46:26 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_test_maieutique] - Concept: 'Le cycle de l'eau'
+2026-06-01 19:46:32 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 6.36s pour le salon [salon_test_maieutique]
+2026-06-02 13:38:22 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi le théorème de Pythagore'
+2026-06-02 13:38:22 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search] - Concept: 'Explique moi le théorème de Pythagore'
+2026-06-02 13:38:26 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.52s pour le salon [salon_krak_search]
+2026-06-02 13:49:12 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-02 13:49:12 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search] - Concept: 'Explique-moi les nombres complexes'
+2026-06-02 13:49:20 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 7.76s pour le salon [salon_krak_search]
+2026-06-02 14:00:49 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide-moi pour une dissertation de philo'
+2026-06-02 14:00:49 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search] - Concept: 'Aide-moi pour une dissertation de philo'
+2026-06-02 14:00:52 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 2.85s pour le salon [salon_krak_search]
+2026-06-02 14:09:29 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Parle moi de la photosynthèse'
+2026-06-02 14:09:29 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search] - Concept: 'Parle moi de la photosynthèse'
+2026-06-02 14:09:34 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.16s pour le salon [salon_krak_search]
+2026-06-03 01:18:39 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi le théorème de Thalès ??'
+2026-06-03 01:18:39 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780442291951] - Concept: 'Explique moi le théorème de Thalès ??'
+2026-06-03 01:18:46 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 6.97s pour le salon [salon_krak_search_1780442291951]
+2026-06-03 01:20:01 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique en détail le processus de la photosynthèse'
+2026-06-03 01:20:01 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780442370453] - Concept: 'Explique en détail le processus de la photosynthèse'
+2026-06-03 01:20:06 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.6s pour le salon [salon_krak_search_1780442370453]
+2026-06-03 01:32:38 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique le théorème de Pythagore'
+2026-06-03 01:32:38 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780443142187] - Concept: 'Explique le théorème de Pythagore'
+2026-06-03 01:32:43 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.39s pour le salon [salon_krak_search_1780443142187]
+2026-06-03 01:32:50 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:32:50 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780443167271] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:32:54 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.29s pour le salon [salon_krak_search_1780443167271]
+2026-06-03 01:34:27 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:34:27 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780443177913] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:34:30 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.16s pour le salon [salon_krak_search_1780443177913]
+2026-06-03 01:39:10 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:39:10 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780443536814] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:39:15 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.43s pour le salon [salon_krak_search_1780443536814]
+2026-06-03 01:44:03 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:44:03 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780443831858] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 01:44:08 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.45s pour le salon [salon_krak_search_1780443831858]
+2026-06-03 02:04:11 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 02:04:11 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780445040387] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 02:04:16 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 5.3s pour le salon [salon_krak_search_1780445040387]
+2026-06-03 02:04:46 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu resumer cela pour moi ??'
+2026-06-03 02:04:46 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780445040387] - Concept: 'Peux tu resumer cela pour moi ??'
+2026-06-03 02:04:49 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 2.86s pour le salon [salon_krak_search_1780445040387]
+2026-06-03 02:04:56 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 02:04:56 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780445094823] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 02:05:00 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.66s pour le salon [salon_krak_search_1780445094823]
+2026-06-03 02:17:37 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi le théorème de Thalès'
+2026-06-03 02:17:37 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780445809583] - Concept: 'Explique moi le théorème de Thalès'
+2026-06-03 02:17:43 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 5.79s pour le salon [salon_krak_search_1780445809583]
+2026-06-03 02:23:04 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 02:23:04 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780446169276] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 02:23:09 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.99s pour le salon [salon_krak_search_1780446169276]
+2026-06-03 02:26:49 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 02:26:49 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780446406413] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 02:26:52 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.67s pour le salon [salon_krak_search_1780446406413]
+2026-06-03 10:08:50 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 10:08:50 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780446764401] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 10:08:55 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.91s pour le salon [salon_krak_search_1780446764401]
+2026-06-03 10:10:53 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 10:10:53 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780474182192] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 10:10:56 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.03s pour le salon [salon_krak_search_1780474182192]
+2026-06-03 10:12:19 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'PEux tu détailler la multiplication ??'
+2026-06-03 10:12:19 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780474182192] - Concept: 'PEux tu détailler la multiplication ??'
+2026-06-03 10:12:22 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 2.52s pour le salon [salon_krak_search_1780474182192]
+2026-06-03 10:13:39 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-03 10:13:39 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780474391118] - Concept: 'Peux tu m'expliquer le théorème de Pythagore ??'
+2026-06-03 10:13:42 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.24s pour le salon [salon_krak_search_1780474391118]
+2026-06-03 14:11:32 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 14:11:32 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780488673256] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 14:11:36 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.29s pour le salon [salon_krak_search_1780488673256]
+2026-06-03 14:13:41 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 14:13:41 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780488819247] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 14:13:44 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 2.59s pour le salon [salon_krak_search_1780488819247]
+2026-06-03 15:19:43 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 15:19:43 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780492767584] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 15:19:48 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 5.81s pour le salon [salon_krak_search_1780492767584]
+2026-06-03 15:21:25 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'D'accord et puis je en savoir un peu plus sur les différentes opérations avec les nombres complexes ??'
+2026-06-03 15:21:25 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780492767584] - Concept: 'D'accord et puis je en savoir un peu plus sur les différentes opérations avec les nombres complexes ??'
+2026-06-03 15:21:30 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.16s pour le salon [salon_krak_search_1780492767584]
+2026-06-03 15:25:21 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Super merci'
+2026-06-03 15:25:21 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780492767584] - Concept: 'Super merci'
+2026-06-03 15:25:24 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 3.0s pour le salon [salon_krak_search_1780492767584]
+2026-06-03 15:52:31 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-03 15:52:31 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780494552266] - Concept: 'Explique-moi les nombres complexes'
+2026-06-03 15:52:35 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.5s pour le salon [salon_krak_search_1780494552266]
+2026-06-03 16:12:37 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Parle moi de la relation de Chasle dans les calculs vectoriels'
+2026-06-03 16:12:37 | INFO     | ai_teacher:generate_and_save_explanation:11 - Début du traitement IA pour le salon [salon_krak_search_1780495477753] - Concept: 'Parle moi de la relation de Chasle dans les calculs vectoriels'
+2026-06-03 16:12:41 | INFO     | ai_teacher:generate_and_save_explanation:38 - Génération réussie en 4.12s pour le salon [salon_krak_search_1780495477753]
+2026-06-03 19:03:33 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 19:03:33 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-03 19:03:39 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 6.36s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:04:28 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Je ne sais grand chose sur la photosynthèse'
+2026-06-03 19:04:28 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Je ne sais grand chose sur la photosynthèse'
+2026-06-03 19:04:31 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.83s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:05:51 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Je pense que leur processus d'alimentation est différent'
+2026-06-03 19:05:51 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Je pense que leur processus d'alimentation est différent'
+2026-06-03 19:05:53 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.55s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:06:22 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Je sais pas'
+2026-06-03 19:06:22 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Je sais pas'
+2026-06-03 19:06:25 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.95s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:10:26 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Je ne sais pas grand chose de tout ça ??'
+2026-06-03 19:10:26 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Je ne sais pas grand chose de tout ça ??'
+2026-06-03 19:10:30 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 4.39s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:12:12 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'D'accord peux tu me donner l'équation bilan de la photosynthèse ??'
+2026-06-03 19:12:12 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'D'accord peux tu me donner l'équation bilan de la photosynthèse ??'
+2026-06-03 19:12:16 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 3.16s pour le salon [salon_krak_search_1780506196611]
+2026-06-03 19:14:59 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Super merci'
+2026-06-03 19:14:59 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780506196611] - Concept: 'Super merci'
+2026-06-03 19:15:02 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 3.01s pour le salon [salon_krak_search_1780506196611]
+2026-06-04 10:06:08 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide-moi pour une dissertation de philo'
+2026-06-04 10:06:08 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780560299664] - Concept: 'Aide-moi pour une dissertation de philo'
+2026-06-04 10:06:13 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 5.12s pour le salon [salon_krak_search_1780560299664]
+2026-06-04 10:20:11 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide-moi pour une dissertation de philo'
+2026-06-04 10:20:11 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780561186744] - Concept: 'Aide-moi pour une dissertation de philo'
+2026-06-04 10:20:15 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 4.22s pour le salon [salon_krak_search_1780561186744]
+2026-06-04 10:28:41 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi comment une dissertation en français'
+2026-06-04 10:28:41 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780561624861] - Concept: 'Explique moi comment une dissertation en français'
+2026-06-04 10:28:45 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 3.38s pour le salon [salon_krak_search_1780561624861]
+2026-06-04 10:31:50 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:31:50 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780561835075] - Concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:31:52 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.63s pour le salon [salon_krak_search_1780561835075]
+2026-06-04 10:33:23 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Donne moi la méthodologie'
+2026-06-04 10:33:23 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780561835075] - Concept: 'Donne moi la méthodologie'
+2026-06-04 10:33:26 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.85s pour le salon [salon_krak_search_1780561835075]
+2026-06-04 10:34:41 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu me détailler cette méthodologie ??'
+2026-06-04 10:34:41 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780561835075] - Concept: 'Peux tu me détailler cette méthodologie ??'
+2026-06-04 10:34:45 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 4.11s pour le salon [salon_krak_search_1780561835075]
+2026-06-04 10:38:01 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:38:01 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562186018] - Concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:38:03 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.32s pour le salon [salon_krak_search_1780562186018]
+2026-06-04 10:40:29 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:40:29 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562329473] - Concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:40:31 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.65s pour le salon [salon_krak_search_1780562329473]
+2026-06-04 10:41:30 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'J'ai besoin de connaitre la méthodologie'
+2026-06-04 10:41:30 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562329473] - Concept: 'J'ai besoin de connaitre la méthodologie'
+2026-06-04 10:41:33 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 3.26s pour le salon [salon_krak_search_1780562329473]
+2026-06-04 10:45:02 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:45:02 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562608607] - Concept: 'Explique moi comment se fait une dissertation en philo'
+2026-06-04 10:45:05 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.53s pour le salon [salon_krak_search_1780562608607]
+2026-06-04 10:46:06 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'J'ai besoin de connaitre la méthologie de rédaction'
+2026-06-04 10:46:06 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562608607] - Concept: 'J'ai besoin de connaitre la méthologie de rédaction'
+2026-06-04 10:46:09 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 3.44s pour le salon [salon_krak_search_1780562608607]
+2026-06-04 10:47:44 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Donne moi les étapes de rédaction'
+2026-06-04 10:47:44 | INFO     | ai_teacher:generate_and_save_explanation:29 - Début du traitement IA pour le salon [salon_krak_search_1780562608607] - Concept: 'Donne moi les étapes de rédaction'
+2026-06-04 10:47:47 | INFO     | ai_teacher:generate_and_save_explanation:56 - Génération réussie en 2.96s pour le salon [salon_krak_search_1780562608607]
+2026-06-04 18:11:16 | INFO     | main:explain_concept:35 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les nombres complexes'
+2026-06-04 18:11:16 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780589463508] - Concept: 'Explique-moi les nombres complexes'
+2026-06-04 18:11:22 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 6.8s pour le salon [salon_krak_search_1780589463508]
+2026-06-05 11:21:56 | INFO     | main:upload_file_proxy:39 - Proxy Upload reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 11:22:05 | ERROR    | main:upload_file_proxy:58 - Échec du proxy d'upload : 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2835, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2646, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2434, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2285, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 436, in initiate
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\_request_helpers.py", line 107, in wait_and_retry
+    return func()
+           ^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 432, in retriable_request
+    self._process_initiate_response(result)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_upload.py", line 573, in _process_initiate_response
+    _helpers.require_status_code(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\main.py", line 50, in upload_file_proxy
+    blob.upload_from_file(file.file, content_type=file.content_type)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 3015, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2853, in _prep_and_do_upload
+    _raise_from_invalid_response(exc)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 5158, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.NotFound: 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+2026-06-05 11:29:55 | INFO     | main:upload_file_proxy:39 - Proxy Upload reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 11:29:58 | ERROR    | main:upload_file_proxy:58 - Échec du proxy d'upload : 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.firebasestorage.app/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2835, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2646, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2434, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2285, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 436, in initiate
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\_request_helpers.py", line 107, in wait_and_retry
+    return func()
+           ^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 432, in retriable_request
+    self._process_initiate_response(result)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_upload.py", line 573, in _process_initiate_response
+    _helpers.require_status_code(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\main.py", line 50, in upload_file_proxy
+    blob.upload_from_file(file.file, content_type=file.content_type)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 3015, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2853, in _prep_and_do_upload
+    _raise_from_invalid_response(exc)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 5158, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.NotFound: 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.firebasestorage.app/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+2026-06-05 11:33:51 | INFO     | main:upload_file_proxy:39 - Proxy Upload reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 11:33:54 | ERROR    | main:upload_file_proxy:58 - Échec du proxy d'upload : 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2835, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2646, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2434, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2285, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 436, in initiate
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\_request_helpers.py", line 107, in wait_and_retry
+    return func()
+           ^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 432, in retriable_request
+    self._process_initiate_response(result)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_upload.py", line 573, in _process_initiate_response
+    _helpers.require_status_code(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\main.py", line 50, in upload_file_proxy
+    blob.upload_from_file(file.file, content_type=file.content_type)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 3015, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2853, in _prep_and_do_upload
+    _raise_from_invalid_response(exc)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 5158, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.NotFound: 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+2026-06-05 11:38:00 | INFO     | main:upload_file_proxy:39 - Proxy Upload reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 11:38:03 | ERROR    | main:upload_file_proxy:58 - Échec du proxy d'upload : 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.firebasestorage.app/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2835, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2646, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2434, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2285, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 436, in initiate
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\_request_helpers.py", line 107, in wait_and_retry
+    return func()
+           ^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 432, in retriable_request
+    self._process_initiate_response(result)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_upload.py", line 573, in _process_initiate_response
+    _helpers.require_status_code(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\main.py", line 50, in upload_file_proxy
+    blob.upload_from_file(file.file, content_type=file.content_type)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 3015, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2853, in _prep_and_do_upload
+    _raise_from_invalid_response(exc)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 5158, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.NotFound: 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.firebasestorage.app/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+2026-06-05 11:45:32 | INFO     | main:upload_file_proxy:44 - Proxy Upload reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 11:45:35 | ERROR    | main:upload_file_proxy:63 - Échec du proxy d'upload : 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2835, in _prep_and_do_upload
+    created_json = self._do_upload(
+                   ^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2646, in _do_upload
+    response = self._do_resumable_upload(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2434, in _do_resumable_upload
+    upload, transport = self._initiate_resumable_upload(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2285, in _initiate_resumable_upload
+    upload.initiate(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 436, in initiate
+    return _request_helpers.wait_and_retry(retriable_request, self._retry_strategy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\_request_helpers.py", line 107, in wait_and_retry
+    return func()
+           ^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\requests\upload.py", line 432, in retriable_request
+    self._process_initiate_response(result)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_upload.py", line 573, in _process_initiate_response
+    _helpers.require_status_code(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\_media\_helpers.py", line 105, in require_status_code
+    raise InvalidResponse(
+google.cloud.storage.exceptions.InvalidResponse: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\main.py", line 55, in upload_file_proxy
+    blob.upload_from_file(file.file, content_type=file.content_type)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 3015, in upload_from_file
+    self._prep_and_do_upload(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 2853, in _prep_and_do_upload
+    _raise_from_invalid_response(exc)
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\google\cloud\storage\blob.py", line 5158, in _raise_from_invalid_response
+    raise exceptions.from_http_status(response.status_code, message, response=response)
+google.api_core.exceptions.NotFound: 404 POST https://storage.googleapis.com/upload/storage/v1/b/krak-64aec.appspot.com/o?uploadType=resumable: {
+  "error": {
+    "code": 404,
+    "message": "The specified bucket does not exist.",
+    "errors": [
+      {
+        "message": "The specified bucket does not exist.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+: ('Request failed with status code', 404, 'Expected one of', <HTTPStatus.OK: 200>, <HTTPStatus.CREATED: 201>)
+2026-06-05 12:09:26 | INFO     | main:upload_file_proxy:53 - Upload local reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 12:15:18 | INFO     | main:upload_file_proxy:53 - Upload local reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 12:23:47 | INFO     | main:upload_file_proxy:53 - Upload local reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 12:28:16 | INFO     | main:upload_file_proxy:45 - Upload local reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le fichier : Annotation 2025-10-14 030659.png
+2026-06-05 12:34:53 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Annotation 2025-10-14 030659.png
+2026-06-05 12:34:55 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:34:55 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780655654781] - Concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:34:58 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-05 12:35:01 | ERROR    | ai_teacher:generate_and_save_explanation:127 - Échec critique de l'IA pour [salon_krak_search_1780655654781]: Error code: 400 - {'error': {'message': 'The model `llama-3.2-90b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 116, in generate_and_save_explanation
+    response = llm.invoke(messages)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 474, in invoke
+    self.generate_prompt(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_groq\chat_models.py", line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama-3.2-90b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-06-05 12:39:17 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Annotation 2025-10-14 030659.png
+2026-06-05 12:39:19 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:39:19 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780655928303] - Concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:39:21 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-05 12:39:23 | ERROR    | ai_teacher:generate_and_save_explanation:127 - Échec critique de l'IA pour [salon_krak_search_1780655928303]: Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 116, in generate_and_save_explanation
+    response = llm.invoke(messages)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 474, in invoke
+    self.generate_prompt(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_groq\chat_models.py", line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama-3.2-11b-vision-preview` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-06-05 12:42:57 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Annotation 2025-10-14 030659.png
+2026-06-05 12:42:59 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:42:59 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780656147793] - Concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:43:01 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-05 12:43:04 | ERROR    | ai_teacher:generate_and_save_explanation:127 - Échec critique de l'IA pour [salon_krak_search_1780656147793]: Error code: 404 - {'error': {'message': 'The model `llama-3.2-11b-vision-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+Traceback (most recent call last):
+  File "C:\Users\DELL\Prof_IA\services\ai_teacher.py", line 116, in generate_and_save_explanation
+    response = llm.invoke(messages)
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 474, in invoke
+    self.generate_prompt(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1823, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1630, in generate
+    self._generate_with_cache(
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1970, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\langchain_groq\chat_models.py", line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\Prof_IA\venv\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.2-11b-vision-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-06-05 12:48:01 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Annotation 2025-10-14 030659.png
+2026-06-05 12:48:03 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:48:03 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780656446145] - Concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 12:48:06 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-05 12:48:11 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 7.94s pour le salon [salon_krak_search_1780656446145]
+2026-06-05 13:05:05 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Annotation 2025-10-14 030659.png
+2026-06-05 13:05:06 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 13:05:06 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780657461763] - Concept: 'Peux tu m'aider face à ce problème ??'
+2026-06-05 13:05:07 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-05 13:05:11 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.1s pour le salon [salon_krak_search_1780657461763]
+2026-06-05 13:07:29 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-05 13:07:29 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780657646527] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-06-05 13:07:32 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 3.15s pour le salon [salon_krak_search_1780657646527]
+2026-06-06 15:02:53 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : WhatsApp Image 2026-06-06 at 15.02.07.jpeg
+2026-06-06 15:02:56 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-06-06 15:02:56 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780750795220] - Concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-06-06 15:03:02 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-06 15:03:06 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 10.08s pour le salon [salon_krak_search_1780750795220]
+2026-06-06 15:04:36 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'C'est quoi la réponse du cas 1 ??'
+2026-06-06 15:04:36 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780750795220] - Concept: 'C'est quoi la réponse du cas 1 ??'
+2026-06-06 15:04:38 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.44s pour le salon [salon_krak_search_1780750795220]
+2026-06-06 15:06:02 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Oui j'ai essayé mais je ne suis pas sûr de ma reponse. Donc donne moi la reponse pour que je puisse vérifier'
+2026-06-06 15:06:02 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780750795220] - Concept: 'Oui j'ai essayé mais je ne suis pas sûr de ma reponse. Donc donne moi la reponse pour que je puisse vérifier'
+2026-06-06 15:06:04 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.31s pour le salon [salon_krak_search_1780750795220]
+2026-06-06 15:06:44 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'J'ai choisi la reponse A'
+2026-06-06 15:06:44 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780750795220] - Concept: 'J'ai choisi la reponse A'
+2026-06-06 15:06:46 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.31s pour le salon [salon_krak_search_1780750795220]
+2026-06-06 15:08:30 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'J'ai calculé au brouillon et j'ai trouvé cette reponse. Raison pour laquelle je veux vérifier'
+2026-06-06 15:08:30 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1780750795220] - Concept: 'J'ai calculé au brouillon et j'ai trouvé cette reponse. Raison pour laquelle je veux vérifier'
+2026-06-06 15:08:34 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 3.77s pour le salon [salon_krak_search_1780750795220]
+2026-06-14 11:54:25 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les suites arithmétiques et géométriques'
+2026-06-14 11:54:25 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781430847126] - Concept: 'Explique-moi les suites arithmétiques et géométriques'
+2026-06-14 11:54:30 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 4.61s pour le salon [salon_krak_search_1781430847126]
+2026-06-14 13:03:51 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 13:03:53 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Analyse cette image de devoir/exercice et corrige TOUT, question par question, en suivant ta méthode complète.'
+2026-06-14 13:03:53 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781435007533] - Concept: 'Analyse cette image de devoir/exercice et corrige TOUT, question par question, en suivant ta méthode complète.'
+2026-06-14 13:03:56 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 13:04:00 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 6.81s pour le salon [salon_krak_search_1781435007533]
+2026-06-14 14:09:28 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Explique-moi les suites arithmétiques et géométriques'
+2026-06-14 14:09:29 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781438557096] - Concept: 'Explique-moi les suites arithmétiques et géométriques'
+2026-06-14 14:09:33 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 4.86s pour le salon [salon_krak_search_1781438557096]
+2026-06-14 14:26:34 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 14:26:36 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-06-14 14:26:36 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781439952368] - Concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-06-14 14:26:37 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 14:26:41 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 4.87s pour le salon [salon_krak_search_1781439952368]
+2026-06-14 14:51:51 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 14:51:54 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 14:51:54 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781441480140] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 14:51:55 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 14:52:00 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.41s pour le salon [salon_krak_search_1781441480140]
+2026-06-14 15:03:06 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 15:03:08 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 15:03:08 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781442154230] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 15:03:10 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 15:03:14 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.15s pour le salon [salon_krak_search_1781442154230]
+2026-06-14 15:15:29 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 15:15:30 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 15:15:30 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781442887453] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 15:15:33 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 15:15:36 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.83s pour le salon [salon_krak_search_1781442887453]
+2026-06-14 18:09:21 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 18:09:22 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:09:22 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781453328958] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:09:25 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 18:09:28 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 6.15s pour le salon [salon_krak_search_1781453328958]
+2026-06-14 18:10:16 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'La première affirmation dans le tableau me bloque'
+2026-06-14 18:10:16 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781453328958] - Concept: 'La première affirmation dans le tableau me bloque'
+2026-06-14 18:10:19 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.48s pour le salon [salon_krak_search_1781453328958]
+2026-06-14 18:11:06 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi à faire le calcul dans la première affirmation'
+2026-06-14 18:11:06 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781453328958] - Concept: 'Aide moi à faire le calcul dans la première affirmation'
+2026-06-14 18:11:08 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.68s pour le salon [salon_krak_search_1781453328958]
+2026-06-14 18:13:30 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Tu t'es trompé d'affirmation. Je parle de la première affirmation dans le tableau dans l'exercice 1'
+2026-06-14 18:13:30 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781453328958] - Concept: 'Tu t'es trompé d'affirmation. Je parle de la première affirmation dans le tableau dans l'exercice 1'
+2026-06-14 18:13:33 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.83s pour le salon [salon_krak_search_1781453328958]
+2026-06-14 18:24:23 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 18:24:25 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:24:25 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454222623] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:24:26 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 18:24:30 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.55s pour le salon [salon_krak_search_1781454222623]
+2026-06-14 18:25:16 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour : Devoir math.jpeg
+2026-06-14 18:25:17 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:25:17 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454283094] - Concept: 'Aide moi sur l'exercice 1'
+2026-06-14 18:25:17 | INFO     | ai_teacher:generate_and_save_explanation:79 - Fichier image détecté : Basculement sur Groq Vision.
+2026-06-14 18:25:22 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 5.29s pour le salon [salon_krak_search_1781454283094]
+2026-06-14 18:26:21 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'La première question dans le tableau'
+2026-06-14 18:26:21 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454283094] - Concept: 'La première question dans le tableau'
+2026-06-14 18:26:24 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.64s pour le salon [salon_krak_search_1781454283094]
+2026-06-14 18:27:00 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'J'ai rien compris raison pour laquelle je te demande de m'aider'
+2026-06-14 18:27:00 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454283094] - Concept: 'J'ai rien compris raison pour laquelle je te demande de m'aider'
+2026-06-14 18:27:03 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.75s pour le salon [salon_krak_search_1781454283094]
+2026-06-14 18:27:38 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi à faire le calcul'
+2026-06-14 18:27:38 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454283094] - Concept: 'Aide moi à faire le calcul'
+2026-06-14 18:27:40 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.74s pour le salon [salon_krak_search_1781454283094]
