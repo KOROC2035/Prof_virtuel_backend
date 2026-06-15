@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     # LA LIGNE DOIT ÊTRE EXACTEMENT ICI, AVEC CETTE ORTHOGRAPHE :
     GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
     
-    LLM_MODEL: str = os.getenv("LLM_MODEL", "gemini-1.5-flash") 
+    LLM_MODEL: str = os.getenv("LLM_MODEL", "gemini-2.5-flash") 
     LLM_TEMPERATURE: float = 0.4
 
     class Config:

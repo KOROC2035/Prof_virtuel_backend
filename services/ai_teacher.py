@@ -79,7 +79,7 @@ def generate_and_save_explanation(channel_id: str, concept: str, file_url: str =
             log.info("Fichier image détecté : Basculement sur Groq Vision.")
             llm = ChatGoogleGenerativeAI(
                 api_key=settings.GOOGLE_API_KEY,
-                model="gemini-1.5-flash", # Le modèle qui "voit"
+                model="gemini-2.5-flash", # Le modèle qui "voit"
                 temperature=settings.LLM_TEMPERATURE
             )
             
