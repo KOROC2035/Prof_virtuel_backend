@@ -26,7 +26,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=["stately-wisp-8a406c.netlify.app"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -69,7 +69,7 @@ async def upload_file_proxy(
             with open(file_path, "wb") as buffer:
                 shutil.copyfileobj(file.file, buffer)
             
-            local_file_url = f"http://127.0.0.1:8000/uploads/{safe_filename}"
+            local_file_url = f"https://prof-virtuel-backend.onrender.com/uploads/{safe_filename}"
             return {"status": "success", "file_url": local_file_url}
             
     except Exception as e:
