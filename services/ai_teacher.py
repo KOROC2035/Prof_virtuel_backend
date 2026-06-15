@@ -1,7 +1,7 @@
 import time # Ajout pour mesurer la performance
 import tempfile
 import requests
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader
 
@@ -77,9 +77,9 @@ def generate_and_save_explanation(channel_id: str, concept: str, file_url: str =
         # --- CAS A : IMAGE (Déploiement du modèle Vision) ---
         if file_url and file_type in ['png', 'jpg', 'jpeg', 'webp', 'image']:
             log.info("Fichier image détecté : Basculement sur Groq Vision.")
-            llm = ChatGroq(
-                api_key=settings.GROQ_API_KEY,
-                model="meta-llama/llama-4-scout-17b-16e-instruct", # Le modèle qui "voit"
+            llm = ChatGoogleGenerativeAI(
+                api_key=settings.GOOGLE_API_KEY,
+                model="gemini-1.5-flash", # Le modèle qui "voit"
                 temperature=settings.LLM_TEMPERATURE
             )
             
@@ -97,8 +97,8 @@ def generate_and_save_explanation(channel_id: str, concept: str, file_url: str =
 
         # --- CAS B : TEXTE OU SANS FICHIER (Modèle Standard ultra-rapide) ---
         else:
-            llm = ChatGroq(
-                api_key=settings.GROQ_API_KEY,
+            llm = ChatGoogleGenerativeAI(
+                api_key=settings.GOOGLE_API_KEY,
                 model=settings.LLM_MODEL, # Utilise le modèle défini dans tes settings
                 temperature=settings.LLM_TEMPERATURE
             )

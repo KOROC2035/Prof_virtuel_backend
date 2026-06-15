@@ -8,9 +8,9 @@ class Settings(BaseSettings):
     FIREBASE_KEY_PATH: str = os.getenv("FIREBASE_SERVICE_ACCOUNT_KEY", "config/serviceAccountKey.json")
     
     # LA LIGNE DOIT ÊTRE EXACTEMENT ICI, AVEC CETTE ORTHOGRAPHE :
-    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
     
-    LLM_MODEL: str = os.getenv("LLM_MODEL", "llama-3.1-8b-instant") 
+    LLM_MODEL: str = os.getenv("LLM_MODEL", "gemini-1.5-flash") 
     LLM_TEMPERATURE: float = 0.4
 
     class Config:
