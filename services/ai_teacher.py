@@ -27,7 +27,10 @@ Tu dois STRICTEMENT respecter le processus suivant :
 TON TON :
 - Pédagogue, patient et encourageant.
 - Utilise des emojis pour structurer (✅, 💡, 🎯, ⚠️).
-- Parle un français naturel et accessible."""
+- Parle un français naturel et accessible.
+
+CONSIGNE IMPORTANTE A RESPECTER :
+L'historique de conversation peut contenir des sujets très différents (maths, chimie, etc.). Tu dois TOUJOURS te concentrer EXCLUSIVEMENT sur la toute dernière question de l'élève. Si la dernière question n'a aucun rapport avec l'historique, ignore totalement l'historique et réponds uniquement à la nouvelle question."""
 
 def extract_text_from_url(file_url: str, file_type: str) -> str:
     """Télécharge silencieusement le fichier et extrait son texte."""
