@@ -18,6 +18,7 @@ Tu dois STRICTEMENT respecter le processus suivant :
 - Salue l'élève avec bienveillance.
 - Pose 1 ou 2 questions très précises et ciblées pour évaluer ce qu'il a déjà compris du concept ou de l'exercice.
 - Attends sa réponse.
+- Une fois que tu as la réponse de l'élève, explique le ce qu'il veut comprendre.
 
 2. L'EXPLICATION CHIRURGICALE (Quand l'élève a répondu à tes questions) :
 - Analyse sa réponse pour comprendre exactement où se trouve son blocage.
@@ -63,7 +64,7 @@ def extract_text_from_url(file_url: str, file_type: str) -> str:
         return "Le système n'a pas pu lire le contenu de ce document."
 
 # Ajout des paramètres file_url et file_type (optionnels)
-def generate_and_save_explanation(channel_id: str, concept: str, file_url: str = None, file_type: str = None) -> None:
+def generate_and_save_explanation(channel_id: str, concept: str, file_url: str = None, file_type: str = None) -> str: # 👈 1. On change 'None' en 'str'
     log.info(f"Début du traitement IA pour le salon [{channel_id}] - Concept: '{concept}'")
     start_time = time.time()
     
@@ -79,7 +80,7 @@ def generate_and_save_explanation(channel_id: str, concept: str, file_url: str =
         # 2. ROUTAGE TACTIQUE SELON LE FICHIER
         # --- CAS A : IMAGE (Déploiement du modèle Vision) ---
         if file_url and file_type in ['png', 'jpg', 'jpeg', 'webp', 'image']:
-            log.info("Fichier image détecté : Basculement sur Groq Vision.")
+            log.info("Fichier image détecté : Basculement sur le modèle Vision.")
             llm = ChatGoogleGenerativeAI(
                 api_key=settings.GOOGLE_API_KEY,
                 model="gemini-2.5-flash", # Le modèle qui "voit"
@@ -123,10 +124,17 @@ def generate_and_save_explanation(channel_id: str, concept: str, file_url: str =
         log.info(f"Génération réussie en {execution_time}s pour le salon [{channel_id}]")
 
         save_ai_message(channel_id, response.content)
+        
+        # 👇 2. AJOUT CRUCIAL : On retourne le texte généré pour que la route l'envoie au JS
+        return response.content
 
     except Exception as e:
         # L'argument exc_info=True est magique : il écrit toute la pile d'erreur (Traceback) 
         # dans le fichier log sans faire crasher ton application !
         log.error(f"Échec critique de l'IA pour [{channel_id}]: {str(e)}", exc_info=True)
         
-        save_error_message(channel_id, "Désolé, j'ai rencontré un problème technique en analysant ta demande.")
+        erreur_msg = "Désolé, j'ai rencontré un problème technique en analysant ta demande."
+        save_error_message(channel_id, erreur_msg)
+        
+        # 👇 3. AJOUT CRUCIAL : On retourne le message d'erreur pour ne pas bloquer l'interface
+        return erreur_msg

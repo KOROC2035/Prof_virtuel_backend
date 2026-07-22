@@ -26,7 +26,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://stately-wisp-8a406c.netlify.app"], 
+    allow_origins=["*"], #"https://stately-wisp-8a406c.netlify.app"
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -82,16 +82,17 @@ async def upload_file_proxy(
 async def explain_concept(
     request: ConceptRequest,
     background_tasks: BackgroundTasks,
-    user: dict = Depends(verify_firebase_token)
+    #user: dict = Depends(verify_firebase_token)
 ):
-    log.info(f"Requête API reçue de l'élève [{user['uid']}] pour le concept: '{request.concept}'")
+    log.info(f"Requête API reçue pour le concept: '{request.concept}'") #f"Requête API reçue de l'élève [{user['uid']}] pour le concept: '{request.concept}'"
     
-    background_tasks.add_task(
-        generate_and_save_explanation,
+    
+    texte_ia = generate_and_save_explanation(
         channel_id=request.channel_id,
         concept=request.concept,
         file_url=request.file_url,
         file_type=request.file_type
-    )
+        )
     
-    return {"status": "processing"}
+    return {"reply": texte_ia}
+    

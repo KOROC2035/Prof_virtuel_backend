@@ -785,3 +785,51 @@ groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.
 2026-06-14 18:27:38 | INFO     | main:explain_concept:87 - Requête API reçue de l'élève [Hzh1nSGppHZY10IIqgo40Fpt0Pf2] pour le concept: 'Aide moi à faire le calcul'
 2026-06-14 18:27:38 | INFO     | ai_teacher:generate_and_save_explanation:64 - Début du traitement IA pour le salon [salon_krak_search_1781454283094] - Concept: 'Aide moi à faire le calcul'
 2026-06-14 18:27:40 | INFO     | ai_teacher:generate_and_save_explanation:120 - Génération réussie en 2.74s pour le salon [salon_krak_search_1781454283094]
+2026-07-14 17:32:58 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-14 17:32:58 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784043178837] - Concept: 'Salut'
+2026-07-14 17:33:07 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 8.41s pour le salon [c1784043178837]
+2026-07-14 17:38:39 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-14 17:38:39 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784043519159] - Concept: 'Salut'
+2026-07-14 17:38:44 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 5.42s pour le salon [c1784043519159]
+2026-07-15 03:43:22 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-15 03:43:22 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784079802107] - Concept: 'Salut'
+2026-07-15 03:43:29 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 7.84s pour le salon [c1784079802107]
+2026-07-15 03:51:29 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-15 03:51:29 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784080289501] - Concept: 'Salut'
+2026-07-15 03:51:38 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 8.9s pour le salon [c1784080289501]
+2026-07-15 03:55:25 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-15 03:55:25 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784080525491] - Concept: 'Salut'
+2026-07-15 03:55:33 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 8.42s pour le salon [c1784080525491]
+2026-07-15 04:02:15 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-15 04:02:15 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784080935538] - Concept: 'Salut'
+2026-07-15 04:02:24 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 8.8s pour le salon [c1784080935538]
+2026-07-15 04:04:28 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-15 04:04:28 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784081068810] - Concept: 'Explique-moi les nombres complexes'
+2026-07-15 04:04:35 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 6.81s pour le salon [c1784081068810]
+2026-07-15 12:07:41 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-15 12:07:41 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784110061358] - Concept: 'Explique-moi les nombres complexes'
+2026-07-15 12:07:50 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 8.96s pour le salon [c1784110061358]
+2026-07-15 12:12:27 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-07-15 12:12:27 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784110347686] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-07-15 12:12:34 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 6.49s pour le salon [c1784110347686]
+2026-07-15 12:22:15 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Salut'
+2026-07-15 12:22:15 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784110935899] - Concept: 'Salut'
+2026-07-15 12:22:22 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 6.66s pour le salon [c1784110935899]
+2026-07-15 12:28:13 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Aide-moi pour une dissertation de philo'
+2026-07-15 12:28:13 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784111293734] - Concept: 'Aide-moi pour une dissertation de philo'
+2026-07-15 12:28:20 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 7.13s pour le salon [c1784111293734]
+2026-07-15 17:28:20 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-15 17:28:20 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784129300368] - Concept: 'Explique-moi les nombres complexes'
+2026-07-15 17:28:29 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 9.0s pour le salon [c1784129300368]
+2026-07-15 17:28:52 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Montre-moi les étapes ultra détaillées pas à pas pour résoudre : 1'
+2026-07-15 17:28:52 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784129300368] - Concept: 'Montre-moi les étapes ultra détaillées pas à pas pour résoudre : 1'
+2026-07-15 17:28:59 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 7.08s pour le salon [c1784129300368]
+2026-07-15 17:29:33 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Génère-moi un exercice de niveau moyen sur : 2. Donne l'énoncé, des indices, puis la réponse à la fin.'
+2026-07-15 17:29:33 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784129300368] - Concept: 'Génère-moi un exercice de niveau moyen sur : 2. Donne l'énoncé, des indices, puis la réponse à la fin.'
+2026-07-15 17:29:43 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 9.96s pour le salon [c1784129300368]
+2026-07-15 17:36:02 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi la photosynthèse'
+2026-07-15 17:36:02 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784129762369] - Concept: 'Explique-moi la photosynthèse'
+2026-07-15 17:36:09 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 6.78s pour le salon [c1784129762369]
+2026-07-22 12:51:07 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-22 12:51:07 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784717467686] - Concept: 'Explique-moi les nombres complexes'
+2026-07-22 12:51:16 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 9.29s pour le salon [c1784717467686]
