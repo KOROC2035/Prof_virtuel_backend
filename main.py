@@ -1,6 +1,8 @@
 from fastapi import FastAPI, Depends, BackgroundTasks, status, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.messages import SystemMessage, HumanMessage
 import firebase_admin
 from firebase_admin import credentials
 import os
@@ -11,7 +13,7 @@ import base64 # <-- Le module secret pour transformer les images
 
 from core.config import settings
 from core.security import verify_firebase_token
-from models.schemas import ConceptRequest
+from models.schemas import ConceptRequest, ModerationRequest
 from services.ai_teacher import generate_and_save_explanation
 from core.logger import log
 
@@ -42,9 +44,9 @@ app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
 @app.post("/api/upload")
 async def upload_file_proxy(
     file: UploadFile = File(...),
-    user: dict = Depends(verify_firebase_token)
+    #user: dict = Depends(verify_firebase_token)
 ):
-    log.info(f"Upload tactique reçu de l'élève [{user['uid']}] pour : {file.filename}")
+    log.info(f"Upload tactique reçu pour : {file.filename}")
     try:
         file_type = file.filename.split('.')[-1].lower()
         
@@ -96,3 +98,40 @@ async def explain_concept(
     
     return {"reply": texte_ia}
     
+
+# 2. La nouvelle route dédiée et allégée
+@app.post("/api/moderate")
+async def moderate_video(request: ModerationRequest):
+    # On isole la logique pour ne rien sauvegarder dans Firestore
+    log.info(f"Vigile IA analyse : [{request.title}] - [{request.subject}]")
+    
+    try:
+        # On initialise un modèle léger et strict (température à 0.0)
+        llm = ChatGoogleGenerativeAI(
+            api_key=settings.GOOGLE_API_KEY,
+            model="gemini-2.5-flash", # Idéal pour la vitesse
+            temperature=0.0 
+        )
+        
+        system_prompt = "Tu es un modérateur strict pour un réseau social éducatif (KrakMinute). Ton seul but est de filtrer le contenu. Si le titre et la matière indiquent un contenu éducatif, réponds 'OUI'. Si c'est du divertissement, prank, lifestyle ou hors-sujet, réponds 'NON'. Ne justifie jamais ta réponse."
+        human_prompt = f"Titre : {request.title}\nMatière : {request.subject}"
+        
+        messages = [
+            SystemMessage(content=system_prompt),
+            HumanMessage(content=human_prompt)
+        ]
+        
+        # Appel direct au modèle
+        response = llm.invoke(messages)
+        ai_text = response.content.strip().upper()
+        
+        # On vérifie si le modèle a bien dit OUI
+        is_edu = "OUI" in ai_text
+        
+        log.info(f"Verdict du Vigile IA : {is_edu} (Réponse brute: {ai_text})")
+        return {"is_educational": is_edu, "raw_response": ai_text}
+        
+    except Exception as e:
+        log.error(f"Erreur du Vigile IA : {str(e)}", exc_info=True)
+        # En cas de crash du serveur IA, on renvoie false pour bloquer par sécurité
+        return {"is_educational": False, "error": str(e)}

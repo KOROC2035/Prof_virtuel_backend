@@ -10,3 +10,8 @@ class ConceptRequest(BaseModel):
 class StandardResponse(BaseModel):
     status: str
     message: str
+    
+# 1. Schéma des données attendues par la route
+class ModerationRequest(BaseModel):
+    title: str
+    subject: str

@@ -833,3 +833,32 @@ groq.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.
 2026-07-22 12:51:07 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
 2026-07-22 12:51:07 | INFO     | ai_teacher:generate_and_save_explanation:67 - Début du traitement IA pour le salon [c1784717467686] - Concept: 'Explique-moi les nombres complexes'
 2026-07-22 12:51:16 | INFO     | ai_teacher:generate_and_save_explanation:123 - Génération réussie en 9.29s pour le salon [c1784717467686]
+2026-07-23 15:24:30 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-23 15:24:30 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Explique-moi les nombres complexes'
+2026-07-23 15:24:40 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 9.72s pour le salon [salon_krak_general]
+2026-07-24 05:56:50 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Comment fonctionne la photosynthèse ?'
+2026-07-24 05:56:50 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Comment fonctionne la photosynthèse ?'
+2026-07-24 05:56:57 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 7.06s pour le salon [salon_krak_general]
+2026-07-24 06:10:31 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-24 06:10:31 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Explique-moi les nombres complexes'
+2026-07-24 06:10:39 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 7.71s pour le salon [salon_krak_general]
+2026-07-24 06:12:02 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-24 06:12:02 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Explique-moi les nombres complexes'
+2026-07-24 06:12:08 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 5.69s pour le salon [salon_krak_general]
+2026-07-24 06:42:33 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu pour : krak_document.jpeg
+2026-07-24 06:42:33 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Analyse cette image de devoir/exercice et corrige TOUT, question par question, en suivant ta méthode complète.'
+2026-07-24 06:42:33 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Analyse cette image de devoir/exercice et corrige TOUT, question par question, en suivant ta méthode complète.'
+2026-07-24 06:42:37 | INFO     | ai_teacher:generate_and_save_explanation:83 - Fichier image détecté : Basculement sur le modèle Vision.
+2026-07-24 06:42:45 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 11.67s pour le salon [salon_krak_general]
+2026-07-24 14:03:40 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Explique-moi les nombres complexes'
+2026-07-24 14:03:40 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Explique-moi les nombres complexes'
+2026-07-24 14:03:49 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 8.75s pour le salon [salon_krak_general]
+2026-07-24 14:04:47 | INFO     | main:upload_file_proxy:47 - Upload tactique reçu pour : krak_document.jpeg
+2026-07-24 14:04:47 | INFO     | main:explain_concept:87 - Requête API reçue pour le concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-07-24 14:04:47 | INFO     | ai_teacher:generate_and_save_explanation:68 - Début du traitement IA pour le salon [salon_krak_general] - Concept: 'Peux tu m'aider sur l'exercice 1 ??'
+2026-07-24 14:04:47 | INFO     | ai_teacher:generate_and_save_explanation:83 - Fichier image détecté : Basculement sur le modèle Vision.
+2026-07-24 14:04:55 | INFO     | ai_teacher:generate_and_save_explanation:124 - Génération réussie en 8.65s pour le salon [salon_krak_general]
+2026-07-24 19:42:27 | INFO     | main:moderate_video:106 - Vigile IA analyse : [Explication de quelques termes informatiques] - [Informatique]
+2026-07-24 19:42:32 | INFO     | main:moderate_video:131 - Verdict du Vigile IA : True (Réponse brute: OUI)
+2026-07-24 19:43:49 | INFO     | main:moderate_video:106 - Vigile IA analyse : [Vid drôle] - [Informatique]
+2026-07-24 19:43:54 | INFO     | main:moderate_video:131 - Verdict du Vigile IA : False (Réponse brute: NON)
